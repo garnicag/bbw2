@@ -1,0 +1,10 @@
+{
+    "name": "bbWeather",
+    "version": "0.0.0",
+    "license": "MIT",
+    "angular-cli": {},
+    "scripts": {},
+    "private": true,
+    "dependencies": {},
+    "devDependencies": {}
+}

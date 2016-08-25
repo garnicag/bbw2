@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>bbWeather</title>
+</head>
+
+<body>
+	<main id="main-view">
+		<div id="container_weather">
+            
+        </div>
+	</main>
+    <script type="text/x-handlebars-template" id="weather-template">
+
+        <p>
+            {{name}}
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </script>
+    <script type="text/x-handlebars-template" id="home-template">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </script>
+    <!-- Libraries -->
+    <script type="text/javascript" src="../libraries/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../libraries/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="../libraries/backbone/backbone-min.js"></script>
+    <script type="text/javascript" src="../libraries/backbone.babysitter/lib/backbone.babysitter.min.js"></script>
+    <script type="text/javascript" src="../libraries/backbone.wreqr/lib/backbone.wreqr.min.js"></script>
+    <script type="text/javascript" src="../libraries/backbone.marionette/lib/backbone.marionette.js"></script>
+    <script type="text/javascript" src="../libraries/handlebars/handlebars.min.js"></script>
+    <!-- App -->
+    <script type="text/javascript" src="js/app/init.js"></script>
+    <script type="text/javascript" src="js/app/app.js"></script>
+
+    <!-- Models -->
+    <script type="text/javascript" src="js/app/models/WeatherModel.js"></script>
+    <!-- Controllers -->
+    <script type="text/javascript" src="js/app/controllers/AppController.js"></script>
+    <!-- Views -->
+    <script type="text/javascript" src="js/app/views/HomeView.js"></script>
+    <script type="text/javascript" src="js/app/views/WeatherView.js"></script>
+    <!-- Router -->
+    <script type="text/javascript" src="js/app/routers/main.js"></script>
+    <!-- Run -->
+    <script type="text/javascript">
+    $(function() {
+        var options = {};
+        
+        bbWeather.App.appRouter = new bbWeather.Routers();
+        bbWeather.App.start(options);
+    });
+    </script>
+</body>
+
+</html>
